@@ -1,8 +1,46 @@
 <html>
   <head>
-    <title>My blog</title>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <style>
+      header {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .navigation {
+        font-family: 'Lobster', cursive;
+      }
+      .navigation .container {
+        display: flex;
+        justify-content: space-around;        
+      }
+      .navigation .container .item {
+        font-size: 40px;
+        border-color: black;
+        border-style: solid;
+        border-radius: 20%;
+        border-width: 1px;
+        margin: 0px 10px 0px 10px;
+      }
+    </style>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p>This is temproray. It will be prettier soon</p>
+    <header>
+      <div class="navigation">
+        <div class="container">
+          <div class="item">Home</div> 
+          <div class="item">Recent blog</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="about-me">
+        <p>This is temproray. It will be prettier soon</p>
+      </div>
+      <div class="updates">
+      </div>
+    </main>
+    <footer>
+    </footer>
   </body>
 </html>
