@@ -6,38 +6,112 @@
     <style>
       header {
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
       }
       .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;  
         font-family: 'Lobster', cursive;
       }
-      .navigation .container {
-        display: flex;
-        justify-content: space-around;        
-      }
-      .navigation .container .item {
+      .navigation .item {
         font-size: 40px;
         border-color: black;
         border-style: solid;
         border-radius: 20%;
-        border-width: 1px;
-        margin: 0px 10px 0px 10px;
+        border-width: 0px;
+        margin: 0px 20px 0px 20px;
+      }
+      .line {
+        /* width:100%; */
+        border-bottom: 2px solid black;
+        /* height: 2px; */
+      }
+      .main {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .main .content {
+        flex: 1 1 auto;
+        margin: 0px 20px 0px 20px;
+      }
+      .main .vl {
+        flex: 0 1 auto;
+        border-left: 2px solid black;
+        height: 500px;
+        margin: 0px;
+      }
+      .main .updates {
+        flex: 0 1 auto;
+        margin: 0px 40px 0px 20px;
+      }
+      .topic {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .details {
+        font-size: 15px;
+        margin: 0px 0px 0px 20px;
       }
     </style>
   <body>
     <header>
       <div class="navigation">
-        <div class="container">
-          <div class="item">Home</div> 
-          <div class="item">Recent blog</div>
-        </div>
+        <div class="item"><a href="#">Home</a></div> 
+        <div class="item"><a href="./html-css.html">Recent blog</a></div>
+      </div>
+      <div>
+        <hr class="line">
       </div>
     </header>
-    <main>
-      <div class="about-me">
-        <p>This is temproray. It will be prettier soon</p>
+    <main class="main">
+      <div class="content">
+        <div class="whoami">
+          <p class="topic"><span class="material-icons md-48 orange600">&#xE87C;</span> Who am I?</p>
+          <p class="details">I am Tommy and an Asian migrant who is studying web development in Dev Acedemy to become a web developer.</p>
+        </div>
+        <div>
+          <p class="topic"><span class="material-icons md-48 orange600">&#xe8d0;</span> What are my values?</p>
+          <p class="details">A fun and simple life - no regret, no worries but only enjoy the moment.</p>
+        </div>
+        <div>
+          <p class="topic">What are my strengths and weaknesses?</p>
+          <p class="details">Strengths
+            <ul>
+              <li>I am a born problem-solver according to the 16 personalities test (<a href="https://www.16personalities.com/istp-personality" target="_blank">link</a>).</li>
+              <li>I have a good observation so it is useful to analyse problems and find solutions.</li>
+            </ul>
+          </p>
+          <p class="details">Weaknesses
+            <ul>
+              <li>I am not fluent in English.</li>
+              <li>I am too nerdy and too introvert.</li>
+            </ul>
+          </p>
+        </div>     
+        <div>
+          <p class="topic">What do I like and dislike?</p>
+          <p class="details">Likes
+            <ul>
+              <li>I love playing games because I am a nerd</li>
+            </ul>
+          </p>
+          <p class="details">Dislikes
+            <ul>
+              <li></li>
+            </ul>
+          </p>
+        </div>             
       </div>
+      <div class="vl"></div>
       <div class="updates">
+        Updates
+        <ul>
+          <li><a href="./html-css.html">Basic CSS</a>
+          </li>
+        </ul>
       </div>
     </main>
     <footer>
