@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glory:wght@500;700;800&display=swap');
+
+:root {
+  --default-font: 'Bebas Neue';
+}
 
 /* Material Icons */
 /* Rules for sizing the icon. */
@@ -21,7 +27,7 @@
 
 body {
     /* font-family: 'Lobster', cursive; */
-    font-family: 'Anton', sans-serif;
+    font-family: var(--default-font), sans-serif;
 }
 
 a:link {
