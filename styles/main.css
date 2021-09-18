@@ -75,7 +75,10 @@ header {
   .intro-image {
     display: flex;
     justify-content: center;
-    /* width: 200px; */
+    /* max-height: 240px; */
+  }
+  .intro-image img {
+    height: 240px;
   }
   .main {
     display: flex;
