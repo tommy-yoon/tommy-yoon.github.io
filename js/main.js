@@ -1,6 +1,7 @@
 // console.log("Welcome to JavaScript console log");
 
 $(function () {
+    console.log("loaded")
     loadUpdates();
     window.addEventListener('resize', loadUpdates);
 });
@@ -11,5 +12,6 @@ function loadUpdates() {
     if (x.matches) { // If media query matches
         $("#updates").load("/blog/updates.html");
     } else {
+        $("#updates").empty();
     }
 }
