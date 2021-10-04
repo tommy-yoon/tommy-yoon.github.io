@@ -6,7 +6,7 @@ $(function () {
 });
 
 function loadUpdates() {
-    var x = window.matchMedia("(max-width: 350px)");
+    var x = window.matchMedia("(min-width: 700px)");
     console.log("(max-width: 350px)", x)
     if (x.matches) { // If media query matches
         $("#updates").load("/blog/updates.html");
