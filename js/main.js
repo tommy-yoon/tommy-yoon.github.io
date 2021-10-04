@@ -11,7 +11,9 @@ function loadUpdates() {
     console.log("(max-width: 350px)", x)
     if (x.matches) { // If media query matches
         $("#updates").load("/blog/updates.html");
+        $("#updates-mobile").empty();
     } else {
+        $("#updates-mobile").load("/blog/updates.html");
         $("#updates").empty();
     }
 }
