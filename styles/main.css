@@ -111,14 +111,25 @@ header {
   align-items: center;
 }
 
+/* for small screens */
 @media (max-width:699px) {
-  .main .vl, .main .updates {
+  .main .vl, .main .updates{
     display: none;
   }
 }
 
+/* big screens */
 @media(min-width:700px) {
   .mobile {
     display: none;
   }
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+#updates-mobile ul{
+  display: none;
 }
