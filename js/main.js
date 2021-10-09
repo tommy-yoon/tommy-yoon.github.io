@@ -6,6 +6,10 @@ $(function () {
     window.addEventListener('resize', loadUpdates);
     console.log($("#updates-mobile > ul"));
     $("#updates-mobile").click(() => { $("#updates-mobile > ul").toggle(); })
+
+    // spinning
+    console.log('add spinning');
+    $(".responsive-img").click((evt) => {console.log('spinning'); spin(evt.target); })
 });
 
 function loadUpdates() {
@@ -18,4 +22,11 @@ function loadUpdates() {
         $("#updates-mobile").load("/blog/updates.html");
         $("#updates").empty();
     }
+}
+
+function spin(target) {
+    target.classList.add("spin");
+    setTimeout(() => {
+        target.classList.remove("spin");
+    }, 2000); 
 }

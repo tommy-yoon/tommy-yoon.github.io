@@ -133,3 +133,18 @@ header {
 #updates-mobile ul{
   display: none;
 }
+
+.spin {
+  /* width: 25%; */
+  animation-name: rotate1;
+  animation-duration: 2s;
+}
+
+@keyframes rotate1 {
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
