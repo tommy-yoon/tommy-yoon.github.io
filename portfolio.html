@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<title>Tommy's Web Dev portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/styles/portfolio.css">
+<link rel="stylesheet" href="/styles/modal-image.css">
+<!-- <style>
+  a:link {
+  color: black;
+  text-decoration: none;
+}
+</style> -->
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Tommy's</b> Web Developer Portfolio</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#projects" class="w3-bar-item w3-button">Studies</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/images/main.png" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Tommy</b></span> <span class="w3-hide-small w3-text-grey">, a web developer</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>I am Tommy who just finished the Web Development Bootcamp in Dev Academy and looking for a web development position. 
+      I have enjoyed learning all the web skills such as HTML, CSS, Node.js, React, Redux, Heroku, SQLite, Agile, GitHub and many mores during the intensive three months web development course. 
+      I am ready to start my career as a junior web developer. 
+      <br/>
+      <br/>
+      At the moment, I am doing a personal project, a virtual classroom application development using WebRTC based on React, Redux and MUI.
+    </p>
+  </div>
+
+  <!-- Studies Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Studies</h3>
+  </div>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img id="myImg" class="thumbnail" src="/images/project1.png" alt="project1" style="width:100%">
+      <h3>Minesweeper</h3>
+      <p class="w3-opacity">HTML, JavaScript and CSS</p>
+      <p>Practicing event handling making a fun game using HTML, CSS and Javascript. It is easy one but still, HTML, JS and CSS are the backbone of web applications.</p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://github.com/tommy-yoon/dev-minesweeper" target="_blank">GitHub</a></button></p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://minesweeper-tommy.herokuapp.com" target="_blank">Web</a></button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class="thumbnail" src="/images/project2.png" alt="project2" style="width:100%">
+      <h3>Server side rendering</h3>
+      <p class="w3-opacity">Handlebars</p>
+      <p>Before jumping into the client side rendering, we studied the server side rendering using Handlebars and also practiced dividing up a page into views, layouts and partials</p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://github.com/tommy-yoon/dev-server-side-rendering" target="_blank">GitHub</a></button></p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://dev-server-side-rendering.herokuapp.com" target="_blank">Web</a></button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class="thumbnail" src="/images/project3.png" alt="project3" style="width:100%">
+      <h3>Worldwide Routing</h3>
+      <p class="w3-opacity">React, React router, React DOM and WebPack</p>
+      <p>Practicing client side React routing. HashRouter is for this challenge.</p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://github.com/tommy-yoon/dev-world-routing" target="_blank">GitHub</a></button></p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://dev-world-routing.herokuapp.com" target="_blank">Web</a></button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class="thumbnail" src="/images/project4.png" alt="project4" style="width:100%">
+      <h3>Pupparazzi</h3>
+      <p class="w3-opacity">Node, Express, Handlebars, file I/O and image uploading</p>
+      <p>Practicing server side routing using Node and Express along with file I/O and image uploading.</p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://github.com/tommy-yoon/dev-pupparazzi" target="_blank">GitHub</a></button></p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://dev-pupparazzi.herokuapp.com" target="_blank">Web</a></button></p>
+    </div>
+  </div>
+  <!-- ################################################################## -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class="thumbnail" src="/images/project5.png" alt="project5" style="width:100%">
+      <h3>Charlottes Web API</h3>
+      <p class="w3-opacity">Database & RestFul API </p>
+      <p>Practice exposing an API for client side consumption. Preparing the back-end with database queries</p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://github.com/tommy-yoon/dev-charlottes-web-log-api" target="_blank">GitHub</a></button></p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://charlottes-web-log-api.herokuapp.com" target="_blank">Web</a></button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class="thumbnail" src="/images/project6.png" alt="project6" style="width:100%">
+      <h3>Dreamfest</h3>
+      <p class="w3-opacity">Database using Knex</p>
+      <p>Practicing Knex for database access, migration and seeding. Knex provides an abstract layer between business logics and database by generating queries for various DBMSs.</p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://github.com/tommy-yoon/dev-dreamfest" target="_blank">GitHub</a></button></p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://dreamfest.herokuapp.com/" target="_blank">Web</a></button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class="thumbnail" src="/images/project7.png" alt="project7" style="width:100%">
+      <h3>Odd Jobs</h3>
+      <p class="w3-opacity">Group project, CI/CD, GitHub projects, GitHub actions and Agile methodology</p>
+      <p>A group project to create a full stack web app based on Agile methodology. Our team also used CI/CD to automate integration and deployment to Heroku. I worked mainly on the back-end and DevOps.</p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://github.com/tommy-yoon/dev-odd-jobs" target="_blank">GitHub</a></button></p>
+      <p><button class="w3-button w3-light-grey w3-block"><a href="https://oddjobs-horoeka.herokuapp.com/" target="_blank">Web</a></button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class="thumbnail" src="/images/project8.png" alt="project8" style="width:100%">
+      <h3>Virtual Classroom</h3>
+      <p class="w3-opacity">Redux Toolkit, Material UI and Web RTC</p>
+      <p>This is my personal project I am working on at the moment. It is still immature but growing and quite challenging.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Coming soon</button></p>
+      <p><button class="w3-button w3-light-grey w3-block">Coming soon</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Please <a href="mailto: tommy.yoon9@gmail.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">email</a> me if you want to hire me.</p>
+    <!-- <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form> -->
+  </div>
+  
+<!-- Image of location/map -->
+<!-- <div class="w3-container">
+  <img src="/images/map.jpg" class="w3-image" style="width:100%">
+</div> -->
+
+<!-- End page content -->
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+</body>
+<script src='/js/modal-image.js'></script>
+</html>
