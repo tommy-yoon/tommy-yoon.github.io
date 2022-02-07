@@ -3,3 +3,12 @@
   border-color: gray;
   border-style: solid;
 }
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  padding-left: 25px;
+  padding-right: 25px;
+}

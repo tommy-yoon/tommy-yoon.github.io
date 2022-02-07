@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>Tommy's portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/styles/portfolio.css">
+<link rel="stylesheet" href="/styles/modal-image.css">
+<!-- <style>
+  a:link {
+  color: black;
+  text-decoration: none;
+}
+</style> -->
+<body>
+  
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="/" class="w3-bar-item w3-button"><b>Tommy's</b> Portfolio</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="/#about" class="w3-bar-item w3-button">About</a>
+      <a href="/#projects" class="w3-bar-item w3-button">Studies</a>
+      <a href="/#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <!-- <img class="w3-image" src="/images/cicd.png" alt="Architecture" width="1500" height="800"> -->
+  <!-- <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Tommy</b></span> <span class="w3-hide-small w3-text-grey">, a web developer</span></h1>
+  </div> -->
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <div class="w3-container w3-padding-32" id="features">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Features</h3>
+    <div class="flex-container">
+      <div class="flex-item">
+          <ul>
+            <li>This software is a web application that allows students attend online-based courses with vide/text chat, white board and other functionalities.</li>
+            <li>All resources for online-classroom are integrated into one application so no need to use several applications(Zoom, Discord, Slack and etc.) for online classes.</li>
+            <li>Timetable is the core part of the software and students not only can check their timetable and their courses but also can attend them directly.</li>
+            <li>Many tasks are automated so that teachers and students can focus on learning.</li>
+          </ul>
+      </div>
+      <div class="flex-item">
+        <img class="thumbnail" src="/images/lockdown-timetable.png" height="300">
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-container w3-padding-32" id="design">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">UI/UX design</h3>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img class="thumbnail" src="/images/lockdown-figma.png" height="200">
+      </div>
+      <div class="flex-item">
+        <ul>
+          <li>
+            I designed UI/UX of the software using Figma
+          </li>
+            <li>Figma is one of the best tools to design UI/UX of software.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-container w3-padding-32" id="cicd">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">CI/CD</h3>
+    <div class="flex-container">
+      <div class="flex-item">
+        <ul>
+            <li>Using GitHub Action, I developed CI/CD pipeline for the software.</li>
+            <li>GitHub Action is good enough for small software but for large software, it can be replaced with other CI/CD such as Jenkins or Travis CI.</li>
+            <li>CI/CD is the process of testing the software before releasing it to the public.</li>
+            <li>The dev pipeline is created for development and testing.</li>
+            <li>The prod pipeline is created for demonstration and user testing.</li>
+            <li>All the configuration for CI/CD is done in a text file using YAML language(<a class="image-link" href="/images/lockdown-cicd-yml.png">link</a>)</li>
+        </ul>
+      </div>
+      <div class="flex-item">
+        <img class="thumbnail" src="/images/lockdown-cicd.png" height="300">
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-container w3-padding-32" id="agile">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Agile</h3>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img class="thumbnail" src="/images/lockdown-agile.png" height="200">
+      </div>
+      <div class="flex-item">
+        <ul>
+          <li>I am following Agile methodologies to develop the software using Trello.</li>
+          <li>GitHub project was used for other school projects but Trello provides more features such as board, card, checklist, and so on.</li>
+          <li>Trello is a powerful tool for team to organize their work and communicate with each other.</li>
+          <li>For this project, I integrated Trello and GitHub Action so that all the commits and push requests are updated on Trello cards(<a class="image-link" href="/images/lockdown-trello-yml.png">link</a>).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <!-- <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Please <a href="mailto: tommy.yoon9@gmail.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">email</a> me if you want to hire me.</p> -->
+    <!-- <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form> -->
+  </div>
+  
+<!-- Image of location/map -->
+<!-- <div class="w3-container">
+  <img src="/images/map.jpg" class="w3-image" style="width:100%">
+</div> -->
+
+<!-- End page content -->
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+</body>
+<script src='/js/modal-link.js'></script>
+</html>
