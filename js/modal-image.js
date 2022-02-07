@@ -18,10 +18,16 @@ document.addEventListener("click", (e) => {
     modalImg.src = elem.dataset.biggerSrc || elem.src;
     captionText.innerHTML = elem.alt; 
   }
+  else if (elem.className ==="image-link") {
+    e.preventDefault();
+    modal.style.display = "block";
+    modalImg.src = elem.dataset.biggerSrc || elem.href;
+    // captionText.innerHTML = elem.alt; 
+  }
 })
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("modal")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
